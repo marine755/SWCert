@@ -1,3 +1,4 @@
+//Dijkstra Algorithm
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -23,9 +24,10 @@ public class shortPath {
 				A[i] = new ArrayList<>();
 				D[i] = INF;
 			}
-
+			//시작점 읽기
 			S = Integer.parseInt(in.readLine());
-
+			
+			//간선 정보 읽기
 			int s, e, c;
 			for (int i = 0; i < E; i++) {
 				st = new StringTokenizer(in.readLine());
