@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class shortPath {
 	private static final int VMAX = 200005, INF = (int) 1e9;
 	private static int V, E, S;
-	private static long[] D = new long[VMAX];
+	private static long[] D = new long[VMAX]; //거리 배열
 	private static ArrayList<Edge>[] A = new ArrayList[VMAX];
 
 	public static void main(String[] args) throws Exception {
