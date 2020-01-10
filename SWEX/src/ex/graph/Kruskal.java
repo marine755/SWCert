@@ -1,4 +1,4 @@
-//9¿ù »çÀü ¹®Á¦ Ç®ÀÌ
+//9Â¿Ã¹ Â»Ã§Ã€Ã¼ Â¹Â®ÃÂ¦ Ã‡Â®Ã€ÃŒ
 
 package ex.graph;
 
@@ -26,16 +26,11 @@ public class Kruskal {
 			this.cost = cost;
 		}
 		
+		@Override
 		public int compareTo(Edge o) {
-			if(this.cost < o.cost) {
-				return -1;
-			} else if(this.cost == o.cost) {
-				return 0;
-			} else {
-				return 1;
-			}
-		}		
-	}
+			return (int)(this.cost - o.cost);
+		   }
+		}
 
 	public static void union(int x, int y) {
 		x = find(x);
