@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class shortPath {
 	private static final int VMAX = 200005, INF = (int) 1e9;
 	private static int V, E, S;
-	private static long[] D = new long[VMAX]; //°Å¸® ¹è¿­
+	private static long[] D = new long[VMAX]; //ê±°ë¦¬ ë°°ì—´ì…ë‹ˆë‹¤.
 	private static ArrayList<Edge>[] A = new ArrayList[VMAX];
 
 	public static void main(String[] args) throws Exception {
@@ -24,10 +24,10 @@ public class shortPath {
 				A[i] = new ArrayList<>();
 				D[i] = INF;
 			}
-			//½ÃÀÛÁ¡ ÀĞ±â
+			//ì‹œì‘ì  ì½ê¸°
 			S = Integer.parseInt(in.readLine());
 			
-			//°£¼± Á¤º¸ ÀĞ±â
+			//ê°„ì„  ì •ë³´ ì½ê¸°
 			int s, e, c;
 			for (int i = 0; i < E; i++) {
 				st = new StringTokenizer(in.readLine());
